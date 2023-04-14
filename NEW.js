@@ -5,7 +5,9 @@ $(function () {
 
 var width =720;
 //it takes 2 seconds to transition between slides
-var animationSpeed = 2000;
+var animationFast = 200;
+var animationSpeed = 200;
+var animationSlow = 4000;
 //Jquery will que up actions and events so make sure that tyour animatedspeed to pause or it will keep runing 
 var pause = animationSpeed + 500;
 var currentSlide = 1;
@@ -44,7 +46,7 @@ function startSlider(){
 //Create a function that will remove the slider
 function pauseSlider(){
 
-    clearInterval(interval)
+ var pause = animationSpeed*2 + 1000;
 }
 //start
 startSlider();
