@@ -1,0 +1,24 @@
+
+
+@mixin theme($dark-theme: true) {
+    @if $dark-theme {
+        background-color: darken($main-color, 100%);
+        color: lighten lighten($text-color, 100%);
+    }
+}
+
+
+@mixin start {
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+@mixin end {
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+@mixin center {
+    justify-content: center;
+        align-items: center;
+}
