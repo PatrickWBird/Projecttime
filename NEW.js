@@ -49,11 +49,15 @@ function pauseSlider(){
  var pause = animationSpeed*2 + 1000;
 }
 //start
-startSlider();
+startSlider() ;
 
 //if the mouse hovers over the slide the animation stops and then it leaves it starts again
 $slideContainer
     .on('mouseenter', pauseSlider)
     .on('mouseleave',startSlider)
 
+
+    .ondblclick('mouseenter', startSlider)
+    .ondblclick('mouseleave', pauseSlider)
 })
+
